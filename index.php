@@ -14,7 +14,7 @@
 		// download
 		for ($i=0;$i<=$_GET['nb'];$i++){
 			do{
-				$pic=file_get_contents('https://thispersondoesnotexist.com/');
+				$pic=file_get_contents('https://thispersondoesnotexist.com/image');
 			}while($pic==$prevpic);
 			file_put_contents('temp/'.$temp_folder.'/face'.$i.'.jpg', $pic);
 			$prevpic=$pic;
